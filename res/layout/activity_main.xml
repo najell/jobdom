@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BFFF"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/titleBtnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_sidemenu_n" />
+
+        <ImageView
+            android:id="@+id/titleImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:src="@drawable/small_logo" />
+
+        <Button
+            android:id="@+id/titleBtnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_alarm" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="201dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/mainImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <EditText
+                    android:id="@+id/editId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_id"                    
+                    android:hint="Username@example.com"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_pw"                    
+                    android:hint="*************"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" />
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#00BFFF"
+                    android:text="로그인"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+                <CheckBox
+                    android:id="@+id/loginCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:button="@drawable/checkbox"
+                    android:text="    로그인 상태 유지"
+                    android:textColor="#808080" />
+
+                <Button
+                    android:id="@+id/loginFaceBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="60dp"
+                    android:background="#00BFFF"
+                    android:drawableLeft="@drawable/icon_facebook"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="페이스북으로 로그인"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

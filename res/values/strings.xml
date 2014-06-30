@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">jobdom</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_search">SearchActivity</string>
+    
+    
+    <string-array name="items">
+        <item>프로필</item>
+        <item>My 담</item>
+        <item>계정정보</item>
+        <item>공지사항</item>
+        <item>QQQ</item>
+        <item>약관과 정책</item>
+        <item>설정</item>
+        <item>로그아웃</item>
+    </string-array>
+    
+    
+    <array name="icons">
+        <item>@drawable/side_icon_1</item>
+        <item>@drawable/side_icon_2</item>
+        <item>@drawable/side_icon_3</item>
+        <item>@drawable/side_icon_4</item>
+        <item>@drawable/side_icon_5</item>
+        <item>@drawable/side_icon_6</item>
+        <item>@drawable/side_icon_7</item>
+        <item>@drawable/side_icon_8</item>
+    </array>
+
+</resources>
